@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.blog.dao.TestDao" >
+<mapper namespace="com.blog.manage.dao.ManageUserDao" >
 	<!-- 结果集 -->
-    <resultMap id="UserResultMap" type="com.blog.domain.User" >
+    <resultMap id="ManageUserResultMap" type="com.blog.manage.domain.ManageUser" >
     	<id column="id" property="id"/>
     	<result column="username" property="username"/>
     	<result column="password" property="password"/>
     	<result column="regist_time" property="registDate"/>
+    	<result column="regist_time" property="password"/>
+    	<result column="password" property="password"/>
     </resultMap>
 	
 	<!-- 查询 -->
-	<select id="getUser" resultMap="UserResultMap" parameterType="java.lang.String">
-		select * from user where id = #{id}
+	<select id="getManageUser" resultMap="ManageUserResultMap" >
+		select * from manage_user 
+		where username = #{arg0} and password = #{arg1}
 	</select>
 
 </mapper>
