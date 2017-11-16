@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jstl/core"%>  
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html lang="en" class="no-js">
+<html lang="zh-cn" class="no-js">
 <head>
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,6 +16,19 @@
 <!--[if IE]>
 <script src="js/html5.js"></script>
 <![endif]-->
+<style>
+	
+	.hint{
+		font-size: 12px;
+		color:#ff0000;;
+		padding:0;
+		margin:0;
+		position: absolute;
+		top: 90px;
+    	left: 58px;
+    	display: none;
+	}
+</style>
 </head>
 <body>
 	<div class="container demo-1">
@@ -24,14 +37,15 @@
 				<canvas id="demo-canvas"></canvas>
 				<div class="logo_box">
 					<h3>欢迎你</h3>
-					<form action="login.do" id="login-form" method="post">
+					<p class="hint">用户名或密码错误</p>
+					<form action="index.html" id="login-form" method="post">
 						<div class="input_outer">
-							<span class="u_user"></span> <input name="username" class="text" autocomplete="off"
+							<span class="u_user"></span> <input name="username" id="username" class="text" autocomplete="off"
 								style="color: #FFFFFF !important" type="text"
 								placeholder="请输入帐号">
 						</div>
 						<div class="input_outer">
-							<span class="us_uer"></span> <input name="password" class="text" autocomplete="off"
+							<span class="us_uer"></span> <input name="password" id="password" class="text" autocomplete="off"
 								style="color: #FFFFFF !important; position: absolute; z-index: 100;"
 								value="" type="password" placeholder="请输入密码">
 						</div>
@@ -49,10 +63,30 @@
 	<script src="<c:url value='/resources/js/login/EasePack.min.js' />"></script>
 	<script src="<c:url value='/resources/js/login/rAF.js' />"></script>
 	<script src="<c:url value='/resources/js/login/demo-1.js' />"></script>
-	<script type="text/javascript">
+	<script src="<c:url value='/resources/js/global/jquery-1.9.1.min.js' />" ></script>
+	<script>
 		function submit(){
-			document.getElementById("login-form").submit();
-		}			
+			$.ajax({
+		        url: "login.do",
+		        type: "POST",
+		        dataType: "json",
+		        data: {
+		        	"username" : $("#username").val(),
+		            "password" : $("#password").val()
+		        },
+		        async: false,
+		        success: function(data) {
+		          if(data.success == true){
+		        	  document.getElementById("login-form").submit();
+		          }else{
+		        	  $(".hint").show();
+		          }
+		        },
+		        error: function() {
+		          alert("error");
+		        }
+		      });
+		}	
 	</script>
 </body>
 </html>

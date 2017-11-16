@@ -53,9 +53,10 @@
 		<!-- 自动扫描mapping.xml文件 -->
 		<property name="mapperLocations">
             <array>
-                <value>classpath:com/blog/manage/mapper/*.xml</value>
+                <value>classpath*:com/blog/manage/mapper/*.xml</value>
             </array>
         </property>
+        <!-- <property name="typeAliasesPackage" value="com.blog.manage.domain" /> -->
 	</bean>
 
 	<!-- DAO接口所在包名，Spring会自动查找其下的类 -->

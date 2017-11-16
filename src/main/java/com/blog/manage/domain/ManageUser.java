@@ -8,7 +8,7 @@ package com.blog.manage.domain;
 * @date 2017年11月15日 下午4:12:41 
 *  
 */
-public class ManageUser {
+public class ManageUser extends Common{
 	
 	/**
 	 * 主键
@@ -21,7 +21,7 @@ public class ManageUser {
 	/**
 	 * 密码
 	 */
-	private String passwrod;
+	private String password;
 	/**
 	 * 注册时间
 	 */
@@ -29,11 +29,12 @@ public class ManageUser {
 	/**
 	 * 真名
 	 */
-	private String real_name;
+	private String realName;
 	/**
 	 * 角色等级
 	 */
 	private String level;
+
 	public String getId() {
 		return id;
 	}
@@ -46,11 +47,11 @@ public class ManageUser {
 	public void setUsername(String username) {
 		this.username = username;
 	}
-	public String getPasswrod() {
-		return passwrod;
+	public String getPassword() {
+		return password;
 	}
-	public void setPasswrod(String passwrod) {
-		this.passwrod = passwrod;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 	public String getRegistTime() {
 		return registTime;
@@ -58,11 +59,11 @@ public class ManageUser {
 	public void setRegistTime(String registTime) {
 		this.registTime = registTime;
 	}
-	public String getReal_name() {
-		return real_name;
+	public String getRealName() {
+		return realName;
 	}
-	public void setReal_name(String real_name) {
-		this.real_name = real_name;
+	public void setRealName(String realName) {
+		this.realName = realName;
 	}
 	public String getLevel() {
 		return level;
