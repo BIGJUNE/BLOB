@@ -6,9 +6,10 @@
     	<id column="id" property="id"/>
     	<result column="username" property="username"/>
     	<result column="password" property="password"/>
-    	<result column="regist_time" property="registDate"/>
-    	<result column="regist_time" property="password"/>
+    	<result column="regist_time" property="registTime"/>
     	<result column="password" property="password"/>
+    	<result column="real_name" property="realName"/>
+    	<result column="level" property="level"/>
     </resultMap>
 	
 	<!-- 查询 -->

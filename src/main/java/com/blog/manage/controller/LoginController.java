@@ -22,7 +22,7 @@ public class LoginController {
 		if(loginUser == null) {
 			return "error";
 		}
-		ManageUser user = service.getUser(loginUser.getUsername(), loginUser.getPasswrod());
+		ManageUser user = service.getUser(loginUser.getUsername(), loginUser.getPassword());
 		if(user == null) {
 			return "error";
 		}
