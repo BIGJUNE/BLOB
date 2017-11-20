@@ -33,7 +33,10 @@
 						<li class="nav-user dropdown"><a href="#"
 							class="dropdown-toggle" data-toggle="dropdown"> <b class="nav-username"></b>gaojunpei</b> <b class="caret"></b></a>
 							<ul class="dropdown-menu">
+								<li><a href="#">创建笔记</a></li>
+								<li><a href="#">权限管理</a></li>
 								<li><a href="#">修改密码</a></li>
+								<li class="divider"></li>
 								<li><a href="logout.do">退出</a></li>
 							</ul></li>
 					</ul>
