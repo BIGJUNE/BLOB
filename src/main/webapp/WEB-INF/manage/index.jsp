@@ -155,21 +155,21 @@
                                         	<td>192.168.123.8</td>
                                             <td>Gecko</td>
                                             <td>Firefox 2.0</td>
-                                            <td>Win 98+ / OSX.2+</td>
+                                            <td>Win 10</td>
                                             <td>2017-11-16 17:00:00</td>
                                         </tr>
                                         <tr class="odd">
                                         	<td>192.168.123.6</td>
                                             <td>Gecko</td>
                                             <td>Firefox 2.0</td>
-                                            <td>Win 98+ / OSX.2+</td>
+                                            <td>Win 10</td>
                                             <td>2017-11-16 17:00:00</td>
                                         </tr>
                                         <tr class="even">
                                         	<td>192.168.123.159</td>
                                             <td>Gecko</td>
                                             <td>Firefox 2.0</td>
-                                            <td>Win 98+ / OSX.2+</td>
+                                            <td>Win 7</td>
                                             <td>2017-11-16 17:00:00</td>
                                         </tr>
                                         <tr class="odd">
