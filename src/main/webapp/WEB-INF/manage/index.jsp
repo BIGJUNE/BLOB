@@ -10,6 +10,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <!-- SESSION & CSS -->
 <%@ include file="session.jsp"%>
+<script type="text/javascript" src='<c:url value="" />'></script>
 <title>后台管理</title>
 </head>
 <body>
