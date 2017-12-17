@@ -16,10 +16,10 @@
 	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
 	
 	<!-- 静态资源处理 -->
-	<mvc:resources location="/WEB-INF/resources/css/" mapping="/resources/css/**"/>
-	<mvc:resources location="/WEB-INF/resources/img/" mapping="/resources/img/**"/>
-	<mvc:resources location="/WEB-INF/resources/js/" mapping="/resources/js/**"/>
-	<mvc:resources location="/WEB-INF/resources/bootstrap/" mapping="/resources/bootstrap/**"/>
+	<mvc:resources location="/resources/css/" mapping="/resources/css/**"/>
+	<mvc:resources location="/resources/img/" mapping="/resources/img/**"/>
+	<mvc:resources location="/resources/js/" mapping="/resources/js/**"/>
+	<mvc:resources location="/resources/bootstrap/" mapping="/resources/bootstrap/**"/>
 	
 	<!-- 定义跳转的文件的前后缀 ，视图模式配置-->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
