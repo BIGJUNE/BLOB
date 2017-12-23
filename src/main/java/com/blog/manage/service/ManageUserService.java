@@ -12,8 +12,8 @@ public class ManageUserService{
 	@Resource
 	private ManageUserDao dao;
 	
-	public ManageUser getUser(String username,String password) {
-		return dao.getManageUser(username, password);
+	public ManageUser getUser(String account,String password) {
+		return dao.getManageUser(account, password);
 	}
 		
 }

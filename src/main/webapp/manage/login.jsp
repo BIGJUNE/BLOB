@@ -27,7 +27,7 @@
 					<h3>欢迎你</h3>
 					<form action="login.do" id="login-form" method="post">
 						<div class="input_outer">
-							<span class="u_user"></span> <input name="username" class="text" autocomplete="off"
+							<span class="u_user"></span> <input name="account" class="text" autocomplete="off"
 								style="color: #FFFFFF !important" type="text"
 								placeholder="请输入帐号">
 						</div>

@@ -6,16 +6,15 @@
     	<id column="id" property="id"/>
     	<result column="username" property="username"/>
     	<result column="password" property="password"/>
-    	<result column="regist_time" property="registTime"/>
+    	<result column="account" property="account"/>
     	<result column="password" property="password"/>
-    	<result column="real_name" property="realName"/>
     	<result column="level" property="level"/>
     </resultMap>
 	
 	<!-- 查询 -->
 	<select id="getManageUser" resultMap="ManageUserResultMap" >
 		select * from manage_user 
-		where username = #{arg0} and password = #{arg1}
+		where account = #{arg0} and password = #{arg1}
 	</select>
 
 </mapper>

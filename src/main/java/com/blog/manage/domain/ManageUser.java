@@ -23,13 +23,9 @@ public class ManageUser extends Common{
 	 */
 	private String password;
 	/**
-	 * 注册时间
+	 * 账号
 	 */
-	private String registTime;
-	/**
-	 * 真名
-	 */
-	private String realName;
+	private String account;
 	/**
 	 * 角色等级
 	 */
@@ -53,17 +49,11 @@ public class ManageUser extends Common{
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public String getRegistTime() {
-		return registTime;
+	public String getAccount() {
+		return account;
 	}
-	public void setRegistTime(String registTime) {
-		this.registTime = registTime;
-	}
-	public String getRealName() {
-		return realName;
-	}
-	public void setRealName(String realName) {
-		this.realName = realName;
+	public void setAccount(String account) {
+		this.account = account;
 	}
 	public String getLevel() {
 		return level;
@@ -71,7 +61,5 @@ public class ManageUser extends Common{
 	public void setLevel(String level) {
 		this.level = level;
 	}
-	
-	
 	
 }

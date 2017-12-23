@@ -10,5 +10,5 @@ import com.blog.manage.domain.ManageUser;
 @Repository
 public interface ManageUserDao {
 	
-	public ManageUser getManageUser(String username,String password);
+	public ManageUser getManageUser(String account,String password);
 }

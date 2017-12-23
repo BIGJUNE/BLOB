@@ -47,7 +47,7 @@ public class LoginController {
 			loginUser.setSuccess(false);
 			return loginUser;
 		}
-		ManageUser user = service.getUser(loginUser.getUsername(), loginUser.getPassword());
+		ManageUser user = service.getUser(loginUser.getAccount(), loginUser.getPassword());
 		if(user == null) {
 			loginUser.setSuccess(false);
 			loginUser.setMsg("用户名或密码错误");

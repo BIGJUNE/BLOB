@@ -40,7 +40,7 @@
 					<p class="hint">用户名或密码错误</p>
 					<form action="index.html" id="login-form" method="post">
 						<div class="input_outer">
-							<span class="u_user"></span> <input name="username" id="username" class="text" autocomplete="off"
+							<span class="u_user"></span> <input name="account" id="account" class="text" autocomplete="off"
 								style="color: #FFFFFF !important" type="text"
 								placeholder="请输入帐号">
 						</div>
@@ -71,7 +71,7 @@
 		        type: "POST",
 		        dataType: "json",
 		        data: {
-		        	"username" : $("#username").val(),
+		        	"account" : $("#account").val(),
 		            "password" : $("#password").val()
 		        },
 		        async: false,
