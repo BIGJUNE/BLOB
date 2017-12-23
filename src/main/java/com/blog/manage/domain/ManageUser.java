@@ -8,7 +8,7 @@ package com.blog.manage.domain;
 * @date 2017年11月15日 下午4:12:41 
 *  
 */
-public class ManageUser {
+public class ManageUser extends Common{
 	
 	/**
 	 * 主键
@@ -34,6 +34,7 @@ public class ManageUser {
 	 * 角色等级
 	 */
 	private String level;
+
 	public String getId() {
 		return id;
 	}
