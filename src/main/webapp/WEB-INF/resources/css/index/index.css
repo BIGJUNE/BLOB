@@ -1,0 +1,9 @@
+.pull-right .nav-username{
+	font-weight: normal;
+}
+#togglePages .icon-cog{
+	padding-right:2px;
+}
+.module-body {
+    min-height: 553px;
+}
